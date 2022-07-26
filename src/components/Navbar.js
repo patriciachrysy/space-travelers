@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import '../assets/styles/Navbar.css';
 
 const NavBar = () => (
   <header>
@@ -15,6 +16,7 @@ const NavBar = () => (
 
       <NavLink
         to="/missions"
+        className={(navData) => (navData.isActive ? 'active-link' : 'none')}
       >
         Missions
       </NavLink>
