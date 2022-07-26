@@ -2,6 +2,6 @@ import http from '../http-common';
 
 const getMissions = () => http.get('/missions');
 
-const missionsService = { getMissions };
+const MissionsService = { getMissions };
 
-export default missionsService;
+export default MissionsService;
