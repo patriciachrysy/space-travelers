@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { retrieveMissions } from '../Redux/missions/missions';
 import Table from 'react-bootstrap/Table';
+import { retrieveMissions } from '../Redux/missions/missions';
 import Mission from './Mission';
+import '../assets/styles/Missions.css';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missions);
@@ -26,7 +27,7 @@ const Missions = () => {
       </thead>
       <tbody>
         {
-          missions.map((mission) => <Mission key={mission.mission_id} mission={mission} />)
+          missions.map((mission) => <Mission key={mission.id} mission={mission} />)
           }
       </tbody>
     </Table>
