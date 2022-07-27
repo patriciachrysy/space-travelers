@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useState } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { retrieveMissions } from '../Redux/missions/missions';
 
 const Missions = () => {
-  const missions = useState((state) => state.missions);
+  const missions = useSelector((state) => state.missions);
   const dispatch = useDispatch();
 
   useEffect(() => {
