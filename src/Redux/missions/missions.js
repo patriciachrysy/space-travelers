@@ -11,12 +11,13 @@ const initialState = [];
 export const retrieveMissions = createAsyncThunk(
   RETRIEVE_ASYNC_MISSIONS,
   async () => {
-    const { data } = MissionsService.getMissions();
-    const payload = {
-      id: data.mission_id,
-      name: data.mission_name,
-      description: data.description,
-    };
+    const result = await MissionsService.getMissions();
+    const { data } = result;
+    const payload = data.map((res) => ({
+      id: res.mission_id,
+      name: res.mission_name,
+      description: res.description,
+    }));
     return payload;
   },
 );
