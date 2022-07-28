@@ -2,3 +2,33 @@
   border-bottom: 3px solid #29b6f6;
   transition: border-bottom 0.5s ease-in-out;
 }
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  font-weight: 100 !important;
+}
+
+header div img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav a:nth-child(2) {
+  padding: 0 20px;
+  margin: 0 20px;
+  border-right: 1px solid black !important;
+}
