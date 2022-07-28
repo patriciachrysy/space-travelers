@@ -6,7 +6,7 @@ import Rockets from './Rockets';
 
 const RounterComponents = () => (
   <Routes>
-    <Route path="/rockets" element={<Rockets />} />
+    <Route path="/" element={<Rockets />} />
     <Route path="/missions" element={<Missions />} />
     <Route path="/profile" element={<Profile />} />
   </Routes>

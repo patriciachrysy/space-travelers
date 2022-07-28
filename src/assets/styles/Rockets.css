@@ -1,0 +1,34 @@
+.container {
+    margin: 50px auto !important;
+    width: 90% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .single-rocket {
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .single-rocket img {
+    width: 250px;
+    height: 180px;
+}
+
+.container .single-rocket div{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .single-rocket div button{
+    width: 25%;
+}
+
+.small-margin {
+    margin-right: 5px;
+}
